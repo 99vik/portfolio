@@ -1,17 +1,20 @@
 import { Source_Code_Pro } from 'next/font/google';
 import TypewritingEffect from './TypewritingEffect';
+import GoDownAnimation from './GoDownAnimation';
 
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'], weight: '400' });
 
 export default function Hero() {
   return (
     <section
-      className={`${sourceCodePro.className} h-screen tracking-tight leading-tight py-6 md:text-xl`}
+      className={`${sourceCodePro.className} h-screen relative tracking-tighter md:tracking-tight leading-tight py-6 text-lg md:text-xl`}
     >
       <p>
         <span className="text-green-500">VIKTOR@DESKTOP </span>
-        <span className="text-purple-700">MINGW64 </span>
-        <span className="text-yellow-500">~Desktop/portfolio </span>
+        <span className="text-purple-600">MINGW64 </span>
+        <span className="text-yellow-400">
+          ~<span className="hidden md:inline-block">/Desktop</span>/portfolio{' '}
+        </span>
         <span className="text-blue-500">(main)</span>
       </p>
       <p>$ py</p>
@@ -21,6 +24,7 @@ export default function Hero() {
         <p>&gt;&gt;&gt;</p>
         <TypewritingEffect />
       </div>
+      <GoDownAnimation />
     </section>
   );
 }

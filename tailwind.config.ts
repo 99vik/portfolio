@@ -15,7 +15,7 @@ const config: Config = {
         },
       },
       animation: {
-        blink: 'blink 1.4s  infinite',
+        blink: 'blink 1.4s infinite',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

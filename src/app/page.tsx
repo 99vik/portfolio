@@ -4,7 +4,12 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <p>down</p>
+      <div className="bg-red-500 h-screen">
+        <p>down</p>
+      </div>
+      <div className="bg-blue-500 h-screen">
+        <p>down</p>
+      </div>
     </main>
   );
 }
