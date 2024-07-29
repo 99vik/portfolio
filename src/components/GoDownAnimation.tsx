@@ -10,7 +10,7 @@ export default function GoDownAnimation() {
     setClientHeight(window.innerHeight);
     setTimeout(() => {
       setIsVisible(true);
-    }, 3000);
+    }, 3500);
   }, []);
 
   function scrollDown() {
