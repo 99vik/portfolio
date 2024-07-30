@@ -1,13 +1,13 @@
 export default function About() {
   return (
-    <section className="min-h-screen flex justify-center bg-gradient-to-b py-20 from-zinc-950 to-zinc-900">
+    <section className="min-h-screen leading-7 tracking-wide flex justify-center bg-gradient-to-b py-20 from-zinc-950 to-zinc-900">
       <div className="flex flex-col max-w-4xl">
         <div className="flex items-center mb-6 gap-6 w-full justify-center">
           <div className="h-px w-20 bg-emerald-500 flex-1" />
           <h2 className="text-2xl font-bold text-emerald-500">About</h2>
           <div className="h-px w-20 bg-emerald-500 flex-1" />
         </div>
-        <div className="space-y-4 text-lg px-20">
+        <div className="space-y-4 px-20">
           <div className="flex">
             <span className="text-emerald-400 mr-3">&#62;</span>
             <p>

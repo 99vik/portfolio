@@ -23,7 +23,7 @@ export default function GoDownAnimation() {
   return (
     <div
       onClick={scrollDown}
-      className={`absolute cursor-pointer group flex opacity-80 transition duration-1000 -space-y-8 ${
+      className={`absolute cursor-pointer group flex transition duration-1000 -space-y-8 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       } flex-col bottom-0 left-1/2 -translate-x-1/2`}
     >

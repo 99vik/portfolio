@@ -1,14 +1,13 @@
 import About from '@/components/About';
 import Hero from '@/components/Hero';
+import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
     <main className="">
       <Hero />
       <About />
-      <div className="bg-blue-500 h-screen">
-        <p>down</p>
-      </div>
+      <Projects />
     </main>
   );
 }
