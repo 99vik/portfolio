@@ -1,3 +1,5 @@
+import ImageSlider from "./ImageSlider";
+
 export default function Projects() {
   return (
     <section className="flex min-h-screen justify-center bg-zinc-900 py-20 leading-7 tracking-wide">
@@ -31,7 +33,9 @@ export default function Projects() {
               </button>
             </div>
           </div>
-          <div className="col-span-2">Pics</div>
+          <div className="col-span-2">
+            <ImageSlider />
+          </div>
         </div>
       </div>
     </section>
