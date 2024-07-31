@@ -9,7 +9,7 @@ export default function Projects() {
           <h2 className="text-2xl font-bold text-emerald-500">Projects</h2>
           <div className="h-px w-20 flex-1 bg-emerald-500" />
         </div>
-        <p>
+        <p className="px-3">
           In my free time, I&apos;ve built numerous projects from scratch, each
           varying in size, complexity, and technology. These range from CLI
           games like Chess in Ruby to machine learning projects using PyTorch.
@@ -18,7 +18,7 @@ export default function Projects() {
           gradually improved my skills. Here are some of my notable projects:
         </p>
         <div className="my-4 h-px w-full bg-zinc-700" />
-        <div className="space-y-3">
+        <div className="space-y-3 px-3">
           <p className="text-xl text-emerald-500">CaseMaker</p>
           <p>
             Next.js app for creating custom phone cases. Upload your own image
@@ -26,7 +26,7 @@ export default function Projects() {
             Price is automatically calculated and on checkout you are redirected
             to Stripe for payment.
           </p>
-          <div className="pb-5 pt-3">
+          <div className="mx-auto aspect-[16/9] w-[calc(96vw)] pb-6 pt-3 md:w-[650px] lg:w-full">
             <ImageSlider
               images={[
                 "/casemaker/image1.png",

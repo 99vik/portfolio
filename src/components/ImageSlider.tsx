@@ -11,7 +11,7 @@ function PrevArrow(props: any) {
     <CircleChevronLeft
       size={28}
       strokeWidth={2.5}
-      className="absolute -left-8 top-1/2 z-10 -translate-y-1/2 cursor-pointer text-emerald-500 hover:text-emerald-600"
+      className="absolute -left-8 top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer text-emerald-500 hover:text-emerald-600 md:block"
       onClick={onClick}
     />
   );
@@ -23,7 +23,7 @@ function NextArrow(props: any) {
     <CircleChevronRight
       size={28}
       strokeWidth={2.5}
-      className="absolute -right-8 top-1/2 z-10 -translate-y-1/2 cursor-pointer text-emerald-500 hover:text-emerald-600"
+      className="absolute -right-8 top-1/2 z-10 hidden -translate-y-1/2 cursor-pointer text-emerald-500 hover:text-emerald-600 md:block"
       onClick={onClick}
     />
   );
@@ -33,7 +33,7 @@ export default function ImageSlider({ images }: { images: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -50,7 +50,7 @@ export default function ImageSlider({ images }: { images: string[] }) {
   return (
     <Slider {...settings}>
       {images.map((image, i) => (
-        <div key={i} className="relative h-[500px]">
+        <div key={i} className="relative aspect-[16/9]">
           <Image
             src={image}
             className="object-scale-down"
