@@ -13,30 +13,39 @@ export default function Projects() {
           In my free time, I&apos;ve built numerous projects from scratch, each
           varying in size, complexity, and technology. These range from CLI
           games like Chess in Ruby to machine learning projects using PyTorch.
-          However, my main focus has been on building full-stack web
-          applications. Here are some of notable examples:
+          My main focus, however, has been on building full-stack web
+          applications. Along the way, I&apos;ve written a lot of bad code and
+          gradually improved my skills. Here are some of my notable projects:
         </p>
-        <div className="my-4 h-px w-full bg-emerald-500/20" />
-        <div className="grid grid-cols-3 gap-4">
-          <div className="flex flex-col space-y-3">
-            <p className="self-center text-xl text-emerald-500">CaseMaker</p>
-            <p>
-              A web application for managing and tracking cases. Next.js app for
-              creating custom phone cases.
-            </p>
-            <div className="grid grid-cols-2 gap-4">
-              <button className="rounded-md bg-emerald-500 px-4 py-2 font-semibold transition hover:bg-emerald-600">
-                See it live
-              </button>
-              <button className="rounded-md border border-emerald-500 px-4 py-2 font-semibold text-emerald-500 transition hover:bg-zinc-800">
-                View code
-              </button>
-            </div>
+        <div className="my-4 h-px w-full bg-zinc-700" />
+        <div className="space-y-3">
+          <p className="text-xl text-emerald-500">CaseMaker</p>
+          <p>
+            Next.js app for creating custom phone cases. Upload your own image
+            and choose additional features like color, finish and case type.
+            Price is automatically calculated and on checkout you are redirected
+            to Stripe for payment.
+          </p>
+          <div className="pb-5 pt-3">
+            <ImageSlider
+              images={[
+                "/casemaker/image1.png",
+                "/casemaker/image2.png",
+                "/casemaker/image3.png",
+                "/casemaker/image4.png",
+              ]}
+            />
           </div>
-          <div className="col-span-2">
-            <ImageSlider />
+          <div className="mt-20 grid grid-cols-2 gap-6">
+            <button className="rounded-md bg-emerald-500 px-4 py-2 font-semibold transition hover:bg-emerald-600">
+              See it live
+            </button>
+            <button className="rounded-md border border-emerald-500 px-4 py-2 font-semibold text-emerald-500 transition hover:bg-zinc-800">
+              View code
+            </button>
           </div>
         </div>
+        <div className="my-4 h-px w-full bg-zinc-700" />
       </div>
     </section>
   );
