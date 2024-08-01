@@ -1,6 +1,13 @@
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import ImageSlider from "./ImageSlider";
-import { SiReactquery, SiShadcnui, SiTypescript } from "react-icons/si";
+import {
+  SiPayloadcms,
+  SiPrisma,
+  SiReactquery,
+  SiShadcnui,
+  SiTrpc,
+  SiTypescript,
+} from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { BsStripe } from "react-icons/bs";
 import Image from "next/image";
@@ -22,8 +29,9 @@ export default function Projects() {
           applications. Along the way, I&apos;ve written a lot of bad code and
           gradually improved my skills. Here are some of my notable projects:
         </p>
-        <div className="my-5 h-px w-full bg-zinc-700" />
-        <div className="space-y-3 px-3">
+        <div className="my-8 h-px w-full bg-zinc-600" />
+
+        <div className="space-y-2 px-3">
           <p className="text-center text-2xl font-semibold text-emerald-500">
             CaseMaker
           </p>
@@ -72,7 +80,7 @@ export default function Projects() {
             </div>
           </div>
           <p>
-            Next.js app for creating custom phone cases. Upload your own image
+            Application for creating custom phone cases. Upload your own image
             and choose additional features like color, finish and case type.
             Price is automatically calculated and on checkout you are redirected
             to Stripe for payment.
@@ -98,6 +106,152 @@ export default function Projects() {
             <a
               target="_blank"
               href="https://github.com/99vik/case-maker"
+              className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
+            >
+              View code
+            </a>
+          </div>
+        </div>
+        <div className="my-8 h-px w-full bg-zinc-600" />
+        <div className="space-y-2 px-3">
+          <p className="text-center text-2xl font-semibold text-emerald-500">
+            LAPIS
+          </p>
+          <p className="-my-4 text-center font-light text-emerald-500/70">
+            (Work in progress)
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 pb-2">
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <RiNextjsFill className="size-6" />
+              Next.js
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <BiLogoTypescript className="size-6" />
+              TypeScript
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <RiTailwindCssFill className="size-6" />
+              Tailwind CSS
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiShadcnui className="size-4" />
+              Shadcn
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiPayloadcms className="size-5" />
+              Payload CMS
+            </div>
+          </div>
+          <p>
+            (Soon to be) Official website of the Laboratory for Manufacturing
+            and Assembly Systems Planning, part of the Faculty of Mechanical
+            Engineering and Naval Architecture at the University of Zagreb. This
+            website focuses on the frontend, with Payload CMS hosted separately
+            on an Express server as the backend for writing news posts. All
+            pages are statically generated. When a post is created, edited, or
+            deleted, the CMS sends an API request to the Next.js server, which
+            then revalidates certain paths to generate new static files.
+          </p>
+          <div className="mx-auto aspect-[16/9] w-[calc(96vw)] pb-6 pt-3 md:w-[650px] lg:w-full">
+            <ImageSlider
+              images={[
+                "/lapis/image1.png",
+                "/lapis/image2.png",
+                "/lapis/image3.png",
+                "/lapis/image4.png",
+              ]}
+            />
+          </div>
+          <div className="mt-20 grid grid-cols-2 gap-6">
+            <a
+              target="_blank"
+              href="https://lapis-nine.vercel.app/"
+              className="rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
+            >
+              See it live
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/99vik/lapis"
+              className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
+            >
+              View code
+            </a>
+          </div>
+        </div>
+        <div className="my-8 h-px w-full bg-zinc-600" />
+
+        <div className="space-y-2 px-3">
+          <p className="text-center text-2xl font-semibold text-emerald-500">
+            PDF chatter
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 pb-2">
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <RiNextjsFill className="size-6" />
+              Next.js
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <BiLogoTypescript className="size-6" />
+              TypeScript
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <RiTailwindCssFill className="size-6" />
+              Tailwind CSS
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiShadcnui className="size-4" />
+              Shadcn
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiPrisma className="size-5" />
+              Prisma
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiTrpc className="size-5" />
+              tRPC
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              KindeAuth
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <Image
+                src="/logos/langchain.svg"
+                width={30}
+                height={20}
+                alt="Drizzle"
+              />
+              Langchain
+            </div>
+          </div>
+          <p>
+            Application where you upload a PDF file and talk to AI about the
+            file&apos;s content. Upon upload, files are vectorized and stored on
+            Pinecone, every message is doing a similarity search against the
+            vector database namespace, where the most similar vectors (pages)
+            are retrieved. Retrieved pages serve as a context, together with few
+            previous messages and specific instructions template to answer the
+            user&apos;s question through OpenAI&apos;s GPT-3.5-turbo model.
+          </p>
+          <div className="mx-auto aspect-[16/9] w-[calc(96vw)] pb-6 pt-3 md:w-[650px] lg:w-full">
+            <ImageSlider
+              images={[
+                "/pdf-chatter/image1.png",
+                "/pdf-chatter/image2.png",
+                "/pdf-chatter/image3.png",
+              ]}
+            />
+          </div>
+          <div className="mt-20 grid grid-cols-2 gap-6">
+            <a
+              target="_blank"
+              href="https://pdf-chatter-ivory.vercel.app/"
+              className="rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
+            >
+              See it live
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/99vik/pdf-chatter"
               className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
             >
               View code
