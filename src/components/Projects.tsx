@@ -4,13 +4,18 @@ import {
   SiPayloadcms,
   SiPrisma,
   SiReactquery,
+  SiRuby,
+  SiRubyonrails,
   SiShadcnui,
   SiTrpc,
   SiTypescript,
+  SiVite,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { BsStripe } from "react-icons/bs";
 import Image from "next/image";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 
 export default function Projects() {
   return (
@@ -146,9 +151,9 @@ export default function Projects() {
             (Soon to be) Official website of the Laboratory for Manufacturing
             and Assembly Systems Planning, part of the Faculty of Mechanical
             Engineering and Naval Architecture at the University of Zagreb. This
-            website focuses on the frontend, with Payload CMS hosted separately
-            on an Express server as the backend for writing news posts. All
-            pages are statically generated. When a post is created, edited, or
+            website is frontend focused, with Payload CMS hosted separately on
+            an Express server as the backend for writing news posts. All pages
+            are statically generated. When a post is created, edited, or
             deleted, the CMS sends an API request to the Next.js server, which
             then revalidates certain paths to generate new static files.
           </p>
@@ -252,6 +257,72 @@ export default function Projects() {
             <a
               target="_blank"
               href="https://github.com/99vik/pdf-chatter"
+              className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
+            >
+              View code
+            </a>
+          </div>
+        </div>
+        <div className="my-8 h-px w-full bg-zinc-600" />
+
+        <div className="space-y-2 px-3">
+          <p className="text-center text-2xl font-semibold text-emerald-500">
+            MessageApp
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 pb-2">
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiRubyonrails className="size-6" />
+              Rails
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiRuby className="size-4" />
+              Ruby
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiVite className="size-5" />
+              Vite
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <FaReact className="size-5" />
+              React
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <IoLogoJavascript className="size-5" />
+              JavaScript
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <RiTailwindCssFill className="size-6" />
+              Tailwind CSS
+            </div>
+          </div>
+          <p>
+            Basic chatting application built with React frontend and Ruby on
+            Rails backend, utilizing the Action Cable WebSockets protocol for
+            live chat updates. It has basic features like customizing your
+            photo, searching and adding friends, creating private or public
+            groups.
+          </p>
+          <div className="mx-auto aspect-[16/9] w-[calc(96vw)] pb-6 pt-3 md:w-[650px] lg:w-full">
+            <ImageSlider
+              images={[
+                "/messageapp/image1.png",
+                "/messageapp/image2.png",
+                "/messageapp/image3.png",
+                "/messageapp/image4.png",
+              ]}
+            />
+          </div>
+          <div className="mt-20 grid grid-cols-2 gap-6">
+            <a
+              target="_blank"
+              href="https://cheery-peony-2b91b4.netlify.app/"
+              className="rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
+            >
+              See it live
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/99vik/messaging-app"
               className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
             >
               View code
