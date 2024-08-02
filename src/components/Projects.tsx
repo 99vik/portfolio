@@ -8,7 +8,6 @@ import {
   SiRubyonrails,
   SiShadcnui,
   SiTrpc,
-  SiTypescript,
   SiVite,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
@@ -19,7 +18,7 @@ import { IoLogoJavascript } from "react-icons/io";
 
 export default function Projects() {
   return (
-    <section className="flex min-h-screen justify-center bg-zinc-900 py-20 leading-7 tracking-wide">
+    <section className="flex justify-center overflow-x-hidden bg-zinc-900 py-20 leading-7 tracking-wide">
       <div className="flex max-w-4xl flex-col">
         <div className="mb-6 flex w-full items-center justify-center gap-6">
           <div className="h-px w-20 flex-1 bg-emerald-500" />
@@ -90,7 +89,7 @@ export default function Projects() {
             Price is automatically calculated and on checkout you are redirected
             to Stripe for payment.
           </p>
-          <div className="mx-auto aspect-[16/9] w-[calc(96vw)] pb-6 pt-3 md:w-[650px] lg:w-full">
+          <div className="mx-auto aspect-[16/9] w-[calc(98vw-10px)] pb-6 pt-3 md:w-[650px] lg:w-full">
             <ImageSlider
               images={[
                 "/casemaker/image1.png",
@@ -157,7 +156,7 @@ export default function Projects() {
             deleted, the CMS sends an API request to the Next.js server, which
             then revalidates certain paths to generate new static files.
           </p>
-          <div className="mx-auto aspect-[16/9] w-[calc(96vw)] pb-6 pt-3 md:w-[650px] lg:w-full">
+          <div className="mx-auto aspect-[16/9] w-[calc(98vw-10px)] pb-6 pt-3 md:w-[650px] lg:w-full">
             <ImageSlider
               images={[
                 "/lapis/image1.png",
@@ -237,7 +236,7 @@ export default function Projects() {
             previous messages and specific instructions template to answer the
             user&apos;s question through OpenAI&apos;s GPT-3.5-turbo model.
           </p>
-          <div className="mx-auto aspect-[16/9] w-[calc(96vw)] pb-6 pt-3 md:w-[650px] lg:w-full">
+          <div className="mx-auto aspect-[16/9] w-[calc(98vw-10px)] pb-6 pt-3 md:w-[650px] lg:w-full">
             <ImageSlider
               images={[
                 "/pdf-chatter/image1.png",
@@ -302,7 +301,7 @@ export default function Projects() {
             photo, searching and adding friends, creating private or public
             groups.
           </p>
-          <div className="mx-auto aspect-[16/9] w-[calc(96vw)] pb-6 pt-3 md:w-[650px] lg:w-full">
+          <div className="mx-auto aspect-[16/9] w-[calc(98vw-10px)] pb-6 pt-3 md:w-[650px] lg:w-full">
             <ImageSlider
               images={[
                 "/messageapp/image1.png",

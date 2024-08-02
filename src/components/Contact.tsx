@@ -1,3 +1,4 @@
+import { CiMail } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 
 export default function Contact() {
@@ -9,13 +10,16 @@ export default function Contact() {
           <h2 className="text-2xl font-bold text-emerald-500">Contact</h2>
           <div className="h-px w-20 flex-1 bg-emerald-500" />
         </div>
-        <div className="space-y-2">
+        <div className="space-y-1">
           <p className="text-center text-sm text-zinc-400">
             Write me an e-mail at:
           </p>
-          <p className="text-center text-lg font-semibold text-emerald-500 md:text-2xl">
-            viktor.miric0@gmail.com
-          </p>
+          <div className="flex items-center justify-center gap-1">
+            <CiMail className="size-6 text-emerald-500" />
+            <p className="text-lg font-semibold text-emerald-500 md:text-2xl">
+              viktor.miric0@gmail.com
+            </p>
+          </div>
         </div>
         <div className="mt-10 flex justify-center">
           <a href="https://github.com/99vik" target="_blank">
