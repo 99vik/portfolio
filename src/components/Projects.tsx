@@ -33,7 +33,7 @@ export default function Projects() {
           applications. Along the way, I&apos;ve written a lot of bad code and
           gradually improved my skills. Here are some of my notable projects:
         </p>
-        <div className="my-8 h-px w-full bg-zinc-600" />
+        <div className="my-5 h-px w-full bg-zinc-600 md:my-8" />
 
         <div className="space-y-2 px-3">
           <p className="text-center text-2xl font-semibold text-emerald-500">
@@ -84,10 +84,10 @@ export default function Projects() {
             </div>
           </div>
           <p>
-            Application for creating custom phone cases. Upload your own image
-            and choose additional features like color, finish and case type.
-            Price is automatically calculated and on checkout you are redirected
-            to Stripe for payment.
+            Application for creating customized phone cases. Upload your own
+            image, position it on the case and choose additional features like
+            color, finish and case type. Preview the final case design and
+            it&apos;s price, then proceed to checkout with Stripe.
           </p>
           <div className="mx-auto aspect-[16/9] w-[calc(98vw-10px)] pb-6 pt-3 md:w-[650px] lg:w-full">
             <ImageSlider
@@ -116,12 +116,12 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="my-8 h-px w-full bg-zinc-600" />
+        <div className="my-5 h-px w-full bg-zinc-600 md:my-8" />
         <div className="space-y-2 px-3">
           <p className="text-center text-2xl font-semibold text-emerald-500">
             LAPIS
           </p>
-          <p className="-my-4 text-center font-light text-emerald-500/70">
+          <p className="text-center font-light text-emerald-500/70">
             (Work in progress)
           </p>
           <div className="flex flex-wrap justify-center gap-3 pb-2">
@@ -183,7 +183,7 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="my-8 h-px w-full bg-zinc-600" />
+        <div className="my-5 h-px w-full bg-zinc-600 md:my-8" />
 
         <div className="space-y-2 px-3">
           <p className="text-center text-2xl font-semibold text-emerald-500">
@@ -262,7 +262,7 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="my-8 h-px w-full bg-zinc-600" />
+        <div className="my-5 h-px w-full bg-zinc-600 md:my-8" />
 
         <div className="space-y-2 px-3">
           <p className="text-center text-2xl font-semibold text-emerald-500">

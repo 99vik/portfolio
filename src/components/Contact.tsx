@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className="flex justify-center bg-zinc-900 py-14 leading-7 tracking-wide">
+    <section className="flex justify-center bg-zinc-900 pb-16 pt-2 leading-7 tracking-wide">
       <div className="flex w-full max-w-4xl flex-col">
         <div className="mb-6 flex w-full items-center justify-center gap-6">
           <div className="h-px w-20 flex-1 bg-emerald-500" />
