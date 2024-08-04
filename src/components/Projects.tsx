@@ -13,8 +13,9 @@ import {
 import { BiLogoTypescript } from "react-icons/bi";
 import { BsStripe } from "react-icons/bs";
 import Image from "next/image";
-import { FaReact } from "react-icons/fa";
+import { FaGithub, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -103,15 +104,17 @@ export default function Projects() {
             <a
               target="_blank"
               href="https://case-maker.vercel.app"
-              className="rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
+              className="flex items-center justify-center gap-1.5 rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
             >
+              <SquareArrowOutUpRight size={16} strokeWidth={3} />
               See it live
             </a>
             <a
               target="_blank"
               href="https://github.com/99vik/case-maker"
-              className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
+              className="flex items-center justify-center gap-1.5 rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
             >
+              <FaGithub size={20} />
               View code
             </a>
           </div>
@@ -170,15 +173,17 @@ export default function Projects() {
             <a
               target="_blank"
               href="https://lapis-nine.vercel.app/"
-              className="rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
+              className="flex items-center justify-center gap-1.5 rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
             >
+              <SquareArrowOutUpRight size={16} strokeWidth={3} />
               See it live
             </a>
             <a
               target="_blank"
               href="https://github.com/99vik/lapis"
-              className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
+              className="flex items-center justify-center gap-1.5 rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
             >
+              <FaGithub size={20} />
               View code
             </a>
           </div>
@@ -249,15 +254,17 @@ export default function Projects() {
             <a
               target="_blank"
               href="https://pdf-chatter-ivory.vercel.app/"
-              className="rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
+              className="flex items-center justify-center gap-1.5 rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
             >
+              <SquareArrowOutUpRight size={16} strokeWidth={3} />
               See it live
             </a>
             <a
               target="_blank"
               href="https://github.com/99vik/pdf-chatter"
-              className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
+              className="flex items-center justify-center gap-1.5 rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
             >
+              <FaGithub size={20} />
               View code
             </a>
           </div>
@@ -315,15 +322,17 @@ export default function Projects() {
             <a
               target="_blank"
               href="https://cheery-peony-2b91b4.netlify.app/"
-              className="rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
+              className="flex items-center justify-center gap-1.5 rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
             >
+              <SquareArrowOutUpRight size={16} strokeWidth={3} />
               See it live
             </a>
             <a
               target="_blank"
               href="https://github.com/99vik/messaging-app"
-              className="rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
+              className="flex items-center justify-center gap-1.5 rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
             >
+              <FaGithub size={20} />
               View code
             </a>
           </div>
