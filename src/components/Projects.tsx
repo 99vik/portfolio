@@ -3,6 +3,7 @@ import ImageSlider from "./ImageSlider";
 import {
   SiPayloadcms,
   SiPrisma,
+  SiPytorch,
   SiReactquery,
   SiRuby,
   SiRubyonrails,
@@ -10,7 +11,7 @@ import {
   SiTrpc,
   SiVite,
 } from "react-icons/si";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoFlask, BiLogoPython, BiLogoTypescript } from "react-icons/bi";
 import { BsStripe } from "react-icons/bs";
 import Image from "next/image";
 import { FaGithub, FaReact } from "react-icons/fa";
@@ -181,6 +182,81 @@ export default function Projects() {
             <a
               target="_blank"
               href="https://github.com/99vik/lapis"
+              className="flex items-center justify-center gap-1.5 rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
+            >
+              <FaGithub size={20} />
+              View code
+            </a>
+          </div>
+        </div>
+
+        <div className="my-5 h-px w-full bg-zinc-600 md:my-8" />
+        <div className="space-y-2 px-3">
+          <p className="text-center text-2xl font-semibold text-emerald-500">
+            AutoML Classifier
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 pb-2">
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <RiNextjsFill className="size-6" />
+              Next.js
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <BiLogoTypescript className="size-6" />
+              TypeScript
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <RiTailwindCssFill className="size-6" />
+              Tailwind CSS
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiShadcnui className="size-4" />
+              Shadcn
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiReactquery className="size-5" />
+              React Query
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <BiLogoPython className="size-5" />
+              Python
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <BiLogoFlask className="size-5" />
+              Flask
+            </div>
+            <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
+              <SiPytorch className="size-5" />
+              PyTorch
+            </div>
+          </div>
+          <p>
+            This project combines a Next.js frontend with a Flask-Python backend
+            to create an intuitive platform for building and managing machine
+            learning classification models. With this application, users can
+            upload CSV datasets, select hyperparameters, and train
+            classification models. The app also allows users to save trained
+            models and make predictions with custom input data. AutoML
+            Classifier simplifies the process of creating and predicting with
+            classification models, it is designed to be run locally.
+          </p>
+          <div className="mx-auto aspect-[16/9] w-[calc(98vw-10px)] pb-6 pt-3 md:w-[650px] lg:w-full">
+            <ImageSlider
+              images={[
+                "/automlclassifier/img2.png",
+                "/automlclassifier/img1.png",
+                "/automlclassifier/img3.png",
+                "/automlclassifier/img4.png",
+                "/automlclassifier/img5.png",
+                "/automlclassifier/img6.png",
+                "/automlclassifier/img7.png",
+                "/automlclassifier/img8.png",
+              ]}
+            />
+          </div>
+          <div className="mt-20 grid grid-cols-1 gap-6">
+            <a
+              target="_blank"
+              href="https://github.com/99vik/auto-ml-classifier"
               className="flex items-center justify-center gap-1.5 rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
             >
               <FaGithub size={20} />
