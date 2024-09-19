@@ -170,7 +170,7 @@ export default function Projects() {
               ]}
             />
           </div>
-          <div className="mt-20 grid grid-cols-2 gap-6">
+          <div className="mt-20 grid gap-6">
             <a
               target="_blank"
               href="https://lapis-nine.vercel.app/"
@@ -179,17 +179,8 @@ export default function Projects() {
               <SquareArrowOutUpRight size={16} strokeWidth={3} />
               See it live
             </a>
-            <a
-              target="_blank"
-              href="https://github.com/99vik/lapis"
-              className="flex items-center justify-center gap-1.5 rounded-md border border-emerald-500 px-4 py-2 text-center font-semibold text-emerald-500 transition hover:bg-zinc-800"
-            >
-              <FaGithub size={20} />
-              View code
-            </a>
           </div>
         </div>
-
         <div className="my-5 h-px w-full bg-zinc-600 md:my-8" />
         <div className="space-y-2 px-3">
           <p className="text-center text-2xl font-semibold text-emerald-500">
