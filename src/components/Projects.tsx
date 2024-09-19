@@ -125,9 +125,6 @@ export default function Projects() {
           <p className="text-center text-2xl font-semibold text-emerald-500">
             LAPIS
           </p>
-          <p className="text-center font-light text-emerald-500/70">
-            (Work in progress)
-          </p>
           <div className="flex flex-wrap justify-center gap-3 pb-2">
             <div className="flex w-fit items-center gap-1 rounded-full border border-zinc-800 bg-zinc-950 px-2 text-emerald-500">
               <RiNextjsFill className="size-6" />
@@ -151,14 +148,14 @@ export default function Projects() {
             </div>
           </div>
           <p>
-            (Soon to be) Official website of the Laboratory for Manufacturing
-            and Assembly Systems Planning, part of the Faculty of Mechanical
-            Engineering and Naval Architecture at the University of Zagreb. This
-            website is frontend focused, with Payload CMS hosted separately on
-            an Express server as the backend for writing news posts. All pages
-            are statically generated. When a post is created, edited, or
-            deleted, the CMS sends an API request to the Next.js server, which
-            then revalidates certain paths to generate new static files.
+            Official website of the Laboratory for Manufacturing and Assembly
+            Systems Planning, part of the Faculty of Mechanical Engineering and
+            Naval Architecture at the University of Zagreb. This website is
+            frontend focused, with Payload CMS hosted separately on an Express
+            server as the backend for writing news posts. All pages are
+            statically generated. When a post is created, edited, or deleted,
+            the CMS sends an API request to the Next.js server, which then
+            revalidates certain paths to generate new static files.
           </p>
           <div className="mx-auto aspect-[16/9] w-[calc(98vw-10px)] pb-6 pt-3 md:w-[650px] lg:w-full">
             <ImageSlider
@@ -173,7 +170,7 @@ export default function Projects() {
           <div className="mt-20 grid gap-6">
             <a
               target="_blank"
-              href="https://lapis-nine.vercel.app/"
+              href="https://pro11.fsb.hr/"
               className="flex items-center justify-center gap-1.5 rounded-md bg-emerald-500 px-4 py-2 text-center font-semibold transition hover:bg-emerald-600"
             >
               <SquareArrowOutUpRight size={16} strokeWidth={3} />
